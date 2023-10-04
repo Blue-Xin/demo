@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:hint="输出框"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_border"
+            android:gravity="center"
+            android:hint="输入框"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hex"
+            android:text="HEX" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            android:text="串口选择："
+
+            android:textColor="#15AFF4"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/serial"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_bg"
+            android:dropDownWidth="wrap_content"
+            android:dropDownVerticalOffset="40dp"
+            android:dropDownSelector="@drawable/spinner_selector"
+            android:popupBackground="@drawable/spinner_popup"
+            android:prompt="@string/spinner_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            android:text="波特率选择："
+
+            android:textColor="#15AFF4"
+            android:textSize="20sp" />
+
+
+        <Spinner
+            android:id="@+id/baud"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_bg"
+            android:dropDownWidth="wrap_content"
+            android:dropDownVerticalOffset="40dp"
+            android:dropDownSelector="@drawable/spinner_selector"
+            android:popupBackground="@drawable/spinner_popup"
+            android:prompt="@string/spinner_title" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sendMsg"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="30dp"
+            android:text="发送"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            android:text="关闭"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>
